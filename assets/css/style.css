@@ -1,7 +1,6 @@
 body{
     margin: 0 auto;
 }
-
 *, ::after, ::before{
     box-sizing: border-box;
 }
@@ -13,31 +12,26 @@ header{
     background-color: chocolate;
     position: relative;
 }
-
 header .header-description{
     max-height: 40px;
     width: 40%;
     float: left;
 }
-
 header .header-description small{
     color: #fff;
     padding-left: 40px;
 }
-
 header .authentication-link{
     width: 60%;
     float: right;
     max-height: 40px;
 }
-
 header .authentication-link ul{
     list-style: none;
     padding: 0;
     float: right;
     margin: 0 10% 0 0;
 }
-
 header .authentication-link li{
     display: inline-block;
     line-height: 25px;
@@ -45,23 +39,19 @@ header .authentication-link li{
     padding-right: 20px;
     padding-left: 20px;
 }
-
 header .authentication-link ul li:last-child{
     border-right: unset;
     padding-right: unset;
 }
-
 header .authentication-link ul li a{
     text-decoration: none;
     color: #000;
     font-weight: bold;
     letter-spacing: 0.09em;
 }
-
 header .authentication-link ul li a:hover{
     color: white;
 }
-
 nav{
     position: relative;
     width: 100%;
@@ -69,14 +59,12 @@ nav{
     background: darkkhaki;
     height: 90px;
 }
-
 nav .logo{
     position: relative;
     width: 30%;
     float: left;
     height: 90px;
 }
-
 nav .logo img{
     height: 65px;
     position: absolute;
@@ -85,7 +73,6 @@ nav .logo img{
     left: 50%;
     transform: translate(-50%, -50% );
 }
-
 nav .menu{
     width: 70%;
     float: left;
@@ -100,17 +87,14 @@ nav .menu ul{
     text-align: center;
     margin: 0 auto;
 }
-
 nav .menu ul li{
     display: inline-block;
     border-right: 1px solid #fff;
     line-height: 30px;
 }
-
 nav .menu ul li:last-child{
     border-right: unset;
 }
-
 nav .menu ul li a{
     text-decoration: none;
     color: #fff;
@@ -119,15 +103,12 @@ nav .menu ul li a{
     padding-right: 20px;
     padding-left: 20px;
 }
-
 nav .menu ul li a.active{
     color: grey !;
 }
-
 nav .menu ul li a:hover{
     color: #000;
 }
-
 aside{
     position: relative;
     width: 30%;
@@ -135,7 +116,6 @@ aside{
     height: calc(100vh - 210px); /* 210px = header + nav */
     background-color: burlywood;
 }
-
 aside .left-menu{
     width: 60%;
     margin: 0 auto;
@@ -196,7 +176,6 @@ main .row article.content{
     background-color: brown;
     padding: 20px;
 }
-
 footer{
     position: relative;
     float: left;
@@ -208,4 +187,27 @@ footer{
 
 footer p{
     margin: 0;
+}
+.col-12{
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+}
+.col-6{
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 50%;
+}
+.col-4{
+    flex: 0 0 auto;
+    width: 33.33333%;
+    max-width: 100%;
+}
+.col-3{
+    flex: 0 0 auto;
+    width: 25%;
+    max-width: 100%;
+}
+.border-1{
+    border: 1px solid red;
 }
