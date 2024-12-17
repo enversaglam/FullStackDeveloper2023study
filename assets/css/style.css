@@ -211,3 +211,22 @@ footer p{
 .border-1{
     border: 1px solid red;
 }
+form.register{
+    width: 50%;
+    margin: 0 auto;
+}
+form input{
+    flex: 0 0 auto;
+    width: 100%;
+    border-color: red;
+    border-radius: 5px;
+    padding: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    background-color: burlywood;
+    background-clip: padding-box;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+form label{
+    letter-spacing: 0.09em;
+}
