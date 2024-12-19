@@ -114,7 +114,7 @@ aside{
     width: 30%;
     float: left;
     height: calc(100vh - 210px); /* 210px = header + nav */
-    background-color: burlywood;
+    background-color: #599da0;
 }
 aside .left-menu{
     width: 60%;
@@ -159,7 +159,7 @@ main{
     width: 70%;
     float: left;
     height: calc(100vh - 210px); /* 210px = header + nav */
-    background-color: cornflowerblue;
+    background-color: #c2c2c2;
 }
 
 main .row{
@@ -215,14 +215,14 @@ form.register{
     width: 50%;
     margin: 0 auto;
 }
-form input{
+form input, form textarea{
     flex: 0 0 auto;
     width: 100%;
-    border-color: red;
-    border-radius: 5px;
+    border-color: #fff;
+    border-radius: 8px;
     padding: 5px;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    background-color: burlywood;
+    background-color: #fff;
     background-clip: padding-box;
     line-height: 1.5;
     margin-top: 10px;
@@ -236,5 +236,39 @@ form label{
 }
 input:focus{
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(241, 143, 32, 0.773);
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+button:hover{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    float: left;
+    vertical-align: top;
+    width: 17px;
+    height: 15px;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+.btn-register{
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: chartreuse;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    margin: 0 10px 0 0;  
+}
+.btn-register:hover{
+    cursor: pointer;
+    background-color: violet;
+    color: black;
+    font-size: 10px;
+}
+.content-center{
+    display: flex;
+    justify-content: center;
 }
